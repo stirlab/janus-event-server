@@ -50,7 +50,7 @@ var logger = new winston.Logger({
 app.use(bodyParser.json());
 
 app.get('/', function (req, res) {
-  res.send('Stirlab Janus events server, this page does nothing, you must make a valid api call');
+  res.send('Janus events server, this page does nothing, Janus must POST to /event');
 });
 
 app.get('/monitor/', function(req, res) {
