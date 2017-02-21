@@ -73,8 +73,7 @@ app.post('/event', function (req, res) {
             logger.error(format('could not write to %s, %s', config.output_file, err));
           }
         }
-        // The extra newline allows for one JSON string per line, which is
-        // easily consumed by something like MongoDB.
+        // The extra newline allows for one JSON string per line.
         fs.appendFile(config.output_file, output + "\n", resultFunc);
       }
     }

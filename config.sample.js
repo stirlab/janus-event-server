@@ -9,8 +9,9 @@ config.output_file = '/path/to/file';
 
 config.json = {};
 // Number of spaces to use when pretty-printing JSON to file.
-// Set to null for no pretty-printing.
-config.json.spaces = 2;
+// Default is no pretty printing, one JSON string per line, which is easily
+// consumed by something like MongoDB.
+//config.json.spaces = null;
 
 /***** END *****/
 // Following lines are always needed.
