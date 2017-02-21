@@ -1,6 +1,7 @@
 # Overview
 
-Collect events for [Janus](https://github.com/meetecho/janus-gateway).
+Setup process for [Janus](https://github.com/meetecho/janus-gateway) can be
+found [here](http://www.meetecho.com/blog/event-handlers-a-practical-example)
 
 This server is dead simple for now, received events can be written to console,
 or dumped to a file.
