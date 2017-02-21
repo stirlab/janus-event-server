@@ -4,8 +4,8 @@ var config = {};
 config.port = 8085;
 
 // Full path to file for storing received events.
-// Leave empty to write to console.
-config.output_file = '/path/to/file';
+// When not set, writes to console.
+//config.output_file = '/path/to/file';
 
 config.json = {};
 // Number of spaces to use when pretty-printing JSON to file.
