@@ -40,8 +40,8 @@ A plugin must export a function which returns an object with one method, ```hand
 
 The function receives two arguments:
 
- - config: The server configuration object.
- - logger: The server logging instance, should you wish to use it for logging
+ - **config**: The server configuration object.
+ - **logger**: The server logging instance, should you wish to use it for logging
            purposes.
 
 The [console plugin](src/plugin/console.js) provides the most simple example
