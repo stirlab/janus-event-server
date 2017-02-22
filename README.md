@@ -20,8 +20,8 @@ See the [sample config](src/config.sample.js) for all configuration options.
 
 Currently implemented plugins are:
 
- - console: Write events to console.
- - file: Write events to a file (currently only supports JSON format).
+ - **console**: Write events to console.
+ - **file**: Write events to a file (currently only supports JSON format).
 
 ### Using plugins
 
