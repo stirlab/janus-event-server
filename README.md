@@ -28,9 +28,7 @@ Currently implemented plugins are:
  - Enable the plugin by adding it to the ```config.enabledPlugins``` array in
    the configuration file
  - Set any appropriate config options for the plugin, eg.
-   ```javascript
-   config.plugin.file.outputFile = '/tmp/foo';
-   ```
+   ```config.plugin.file.outputFile = '/tmp/foo';```
    Configuration options for a plugin will be under the
    ```config.plugin.[name of plugin]``` section of the configuration file
 
