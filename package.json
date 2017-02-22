@@ -2,7 +2,7 @@
   "name": "janus-event-server",
   "version": "0.0.1",
   "description": "Receive and store events from a Janus server",
-  "main": "app.js",
+  "main": "src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./app.js"
