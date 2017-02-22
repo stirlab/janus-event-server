@@ -1,11 +1,11 @@
 # Overview
 
-Setup process for [Janus](https://github.com/meetecho/janus-gateway) can be
-found [here](http://www.meetecho.com/blog/event-handlers-a-practical-example).
-
 This server follows a dead simple plugin workflow: received events are passed
 directly to one or more configured plugins, which handle the processing of the
 event.
+
+Setup process for [Janus](https://github.com/meetecho/janus-gateway) can be
+found [here](http://www.meetecho.com/blog/event-handlers-a-practical-example).
 
 ## Installation
  - ```npm install```
