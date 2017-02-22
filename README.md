@@ -16,7 +16,14 @@ found [here](http://www.meetecho.com/blog/event-handlers-a-practical-example).
 
 See the [sample config](src/config.sample.js) for all configuration options.
 
-## Using plugins
+## Plugins
+
+Currently implemented plugins are:
+
+ - console: Write events to console.
+ - file: Write events to a file (currently only supports JSON format).
+
+### Using plugins
 
  - Enable the plugin by adding it to the ```config.enabledPlugins``` array in
    the configuration file
@@ -27,10 +34,9 @@ See the [sample config](src/config.sample.js) for all configuration options.
    Configuration options for a plugin will be under the
    ```config.plugin.[name of plugin]``` section of the configuration file
 
-## Writing plugins
+### Writing plugins
 
-A plugin must export a function which returns an object with one method,
-```handleEvent```.
+A plugin must export a function which returns an object with one method, ```handleEvent```.
 
 The function receives two arguments:
 
