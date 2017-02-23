@@ -3,5 +3,5 @@
    - Support HTTPS?
 
  - File plugin
-   - Support for writing different event types to differnt files
+   - Support for writing different event types to different files
    - Support for date stamping
