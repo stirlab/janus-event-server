@@ -29,8 +29,6 @@ Currently implemented plugins are:
    the configuration file
  - Set any appropriate config options for the plugin, eg.
    ```config.plugin.file.outputFile = '/tmp/foo';```
-   Configuration options for a plugin will be under the
-   ```config.plugin.[name of plugin]``` section of the configuration file
 
 ### Writing plugins
 
@@ -44,3 +42,7 @@ The function receives two arguments:
 
 The [console plugin](src/plugin/console.js) provides the most simple example
 of the implementation.
+
+Configuration options for a plugin can technically be in any structure in the
+configuration file, but by convention should go under their own
+```config.plugin.[name of plugin]``` object.
