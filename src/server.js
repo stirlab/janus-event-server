@@ -21,23 +21,25 @@ if (process.env.NODE_ENV !== "production") {
   //app.use(morgan('dev'));
 }
 
-var level = config.logLevel || 'info';
-var transports;
+const logger = winston.createLogger();
+
+const cliLogFormat = winston.format.combine(
+  winston.format.colorize(),
+  winston.format.cli()
+);
+
 if (config.logDir) {
-  transports = [
-    new (winston.transports.File)({ filename: config.logDir + '/server.log' }),
-  ];
+  logger.add(new winston.transports.File({
+    filename: config.logDir + '/server.log',
+    level: 'info'
+  }));
 }
 else {
-  transports = [
-    new (winston.transports.Console)({colorize: true}),
-  ];
+  logger.add(new winston.transports.Console({
+    level: 'debug',
+    format: cliLogFormat,
+  }));
 }
-
-var logger = new winston.Logger({
-  level: level,
-  transports: transports,
-});
 
 app.use(bodyParser.json());
 
