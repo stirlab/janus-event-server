@@ -11,11 +11,11 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "body-parser": "1.18.3",
-    "express": "4.16.4",
-    "errorhandler": "1.5.0",
-    "morgan": "1.9.1",
-    "underscore": "1.9.1",
-    "winston": "3.1.0"
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "errorhandler": "1.5.1",
+    "morgan": "1.10.0",
+    "underscore": "1.13.1",
+    "winston": "3.3.3"
   }
 }
