@@ -14,7 +14,7 @@
     "body-parser": "2.3.0",
     "express": "5.2.1",
     "errorhandler": "1.5.2",
-    "morgan": "1.11.0",
+    "morgan": "1.12.1",
     "underscore": "1.13.8",
     "winston": "3.19.0"
   }
